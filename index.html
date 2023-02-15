@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+  <body>
+    <h1 id="title" class="animate__animated animate__backInLeft">Survey Form</h1>
+    <p id="description" class="animate__animated animate__backInLeft">Please fill out this survey form.</p>
+    <form id="survey-form" class="animate__animated animate__pulse">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <br>
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <br>
+      <label for="number" id="number-label">Age:</label>
+      <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="99" required>
+      <br>
+      <label for="dropdown">Select your gender:</label>
+      <select id="dropdown" name="gender">
+        <option value="">Select an option</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <br>
+      <label>Which of the following do you like?</label>
+      <br>
+      <input type="radio" id="option1" name="likes" value="option1">
+      <label for="option1">Option 1</label>
+      <br>
+      <input type="radio" id="option2" name="likes" value="option2">
+      <label for="option2">Option 2</label>
+      <br>
+      <input type="radio" id="option3" name="likes" value="option3">
+      <label for="option3">Option 3</label>
+      <br>
+      <label>Which of the following do you own?</label>
+      <br>
+      <input type="checkbox" id="item1" name="items[]" value="item1">
+      <label for="item1">Item 1</label>
+      <br>
+      <input type="checkbox" id="item2" name="items[]" value="item2">
+      <label for="item2">Item 2</label>
+      <br>
+      <input type="checkbox" id="item3" name="items[]" value="item3">
+      <label for="item3">Item 3</label>
+      <br>
+      <textarea id="comments" name="comments" placeholder="Enter any additional comments"></textarea>
+      <br>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
